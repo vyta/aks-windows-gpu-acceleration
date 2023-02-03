@@ -26,7 +26,7 @@ This reposity holds instructions for configuring GPU acclerated Windows nodes in
 
 1. Wait for VM extensions to run
 
-1. Deploy `k8s-directx-device-plugin.yaml to your cluster
+1. Deploy `k8s-directx-device-plugin.yaml to your cluster. This will only work for dockershim or containerd versions 1.7.0-beta*
 
     ```bash
     kubectl apply -f https://raw.githubusercontent.com/marosset/aks-windows-gpu-acceleration/main/k8s-directx-device-plugin/k8s-directx-device-plugin.yaml
